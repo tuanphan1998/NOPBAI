@@ -63,37 +63,32 @@ class AddUser extends Component {
   )
   tinhtoanMang = () => {
       var Array = [];
-      let i = 0;
-      let giatri;
+      var giatri = 0;
       let mang =  JSON.parse(localStorage.getItem('userData'));
         mang.forEach(element => {
               if(element.id % 2)
               {
-                Array.push(element.permission);
+                Array.push(element);
+                giatri += element.permission;
+                console.log(giatri);
               }
         });
-    for(i ; i<Array.length ; i++)
-    {
-        giatri = Array[i] + Array[i+1];
-        return(giatri);
-    }
+    return(giatri);
   }
   tinhtoanMang2 = () => {
     var Array = [];
-    let i = 0;
-    let giatri;
+   
+    var giatri = 0;
     let mang =  JSON.parse(localStorage.getItem('userData'));
       mang.forEach(element => {
             if(!(element.id % 2))
             {
               Array.push(element.permission);
+              giatri += element.permission;
+              console.log(giatri);
             }
       });
-  for(i ; i<Array.length ; i++)
-  {
-      giatri = Array[i] + Array[i+1];
       return(giatri);
-  }
 }
 
 
