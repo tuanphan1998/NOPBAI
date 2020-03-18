@@ -1,0 +1,26 @@
+[
+    {
+        "id" : 1,
+        "name" : "So thu nhat",
+        "tel" : "01654665693",
+        "permission" : 10
+    },
+    {
+        "id" : 2,
+        "name" : "So thu hai",
+        "tel" : "01654665693",
+        "permission" : 20
+    },
+    {
+        "id" : 3,
+        "name" : "So thu ba",
+        "tel" : "01654665693",
+        "permission" : 2
+    },
+    {
+        "id" : 4,
+        "name" : "So thu tu",
+        "tel" : "01654665693",
+        "permission" : 10
+    }
+]
